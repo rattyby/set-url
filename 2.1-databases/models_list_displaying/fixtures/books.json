@@ -16,5 +16,41 @@
       "author": "Джордж Оруэл",
       "pub_date": "2016-12-06"
     }
+  },
+  {
+    "model": "books.book",
+    "pk": 3,
+    "fields": {
+      "name": "Пособник",
+      "author": "Йэн Бэнкс",
+      "pub_date": "2013-02-14"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 4,
+    "fields": {
+      "name": "Сияние",
+      "author": "Стивен Кинг",
+      "pub_date": "2015-03-11"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 5,
+    "fields": {
+      "name": "Ярость",
+      "author": "Стивен Кинг",
+      "pub_date": "2011-01-31"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 6,
+    "fields": {
+      "name": "Цветы для Элджернона",
+      "author": "Дэниел Киз",
+      "pub_date": "2011-01-31"
+    }
   }
 ]

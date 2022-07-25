@@ -1,3 +1,4 @@
+from django.urls import register_converter
 
 
 class PubDateConverter:
@@ -8,3 +9,6 @@ class PubDateConverter:
 
     def to_url(self, value):
         return value.__str__()
+
+
+register_converter(PubDateConverter, 'pubdate')
