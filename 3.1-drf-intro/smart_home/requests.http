@@ -13,18 +13,18 @@ POST {{baseUrl}}/sensors/
 Content-Type: application/json
 
 {
-  "name": "SNS6",
-  "description": "Underfloor"
+  "name": "SNT10",
+  "description": "For future"
 }
 
 ###
 
 # обновление датчика
-PATCH {{baseUrl}}/sensors/6/
+PATCH {{baseUrl}}/sensors/5/
 Content-Type: application/json
 
 {
-  "description": "Underfloor bathroom"
+  "description": "Bedroom 2"
 }
 
 ###
@@ -34,12 +34,12 @@ POST {{baseUrl}}/measurements/
 Content-Type: application/json
 
 {
-  "id_sensor": 3,
-  "temperature": 20.5
+  "id_sensor": 1,
+  "temperature": 22.2
 }
 
 ###
 
 # получение информации по датчику
-GET {{baseUrl}}/sensors/1/
+GET {{baseUrl}}/sensors/5/
 Content-Type: application/json
