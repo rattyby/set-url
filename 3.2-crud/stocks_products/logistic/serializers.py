@@ -50,6 +50,8 @@ class StockSerializer(serializers.ModelSerializer):
         # здесь вам надо обновить связанные таблицы
         # в нашем случае: таблицу StockProduct
         # с помощью списка positions
+        current_position = StockProduct.objects.filter(stock=stock)
+        current_position.delete()
         for position in positions:
             position_object = StockProduct.objects.create(stock=stock, **position)
             stock.positions.add(position_object)
